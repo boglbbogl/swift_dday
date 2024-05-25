@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1B17395C2C01EEC10054E0AB /* DDayProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17395B2C01EEC10054E0AB /* DDayProjectApp.swift */; };
-		1B17395E2C01EEC10054E0AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17395D2C01EEC10054E0AB /* ContentView.swift */; };
+		1B17395E2C01EEC10054E0AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17395D2C01EEC10054E0AB /* MainView.swift */; };
 		1B1739602C01EEC20054E0AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B17395F2C01EEC20054E0AB /* Assets.xcassets */; };
 		1B1739632C01EEC20054E0AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1739622C01EEC20054E0AB /* Preview Assets.xcassets */; };
+		1BB9554F2C024A6B00DA61FC /* DDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB9554E2C024A6B00DA61FC /* DDay.swift */; };
 		1BC813422C01F10E00C7FA8B /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC813412C01F10E00C7FA8B /* EditView.swift */; };
-		1BC813452C020EB300C7FA8B /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC813442C020EB300C7FA8B /* EditViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B1739582C01EEC10054E0AB /* DDayProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDayProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B17395B2C01EEC10054E0AB /* DDayProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayProjectApp.swift; sourceTree = "<group>"; };
-		1B17395D2C01EEC10054E0AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B17395D2C01EEC10054E0AB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1B17395F2C01EEC20054E0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1739622C01EEC20054E0AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BB9554E2C024A6B00DA61FC /* DDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDay.swift; sourceTree = "<group>"; };
 		1BC813412C01F10E00C7FA8B /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
-		1BC813442C020EB300C7FA8B /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +55,10 @@
 		1B17395A2C01EEC10054E0AB /* DDayProject */ = {
 			isa = PBXGroup;
 			children = (
-				1BC813432C020E8600C7FA8B /* Edit */,
 				1B17395B2C01EEC10054E0AB /* DDayProjectApp.swift */,
-				1B17395D2C01EEC10054E0AB /* ContentView.swift */,
+				1B17395D2C01EEC10054E0AB /* MainView.swift */,
+				1BC813412C01F10E00C7FA8B /* EditView.swift */,
+				1BB9554E2C024A6B00DA61FC /* DDay.swift */,
 				1B17395F2C01EEC20054E0AB /* Assets.xcassets */,
 				1B1739612C01EEC20054E0AB /* Preview Content */,
 			);
@@ -70,15 +71,6 @@
 				1B1739622C01EEC20054E0AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1BC813432C020E8600C7FA8B /* Edit */ = {
-			isa = PBXGroup;
-			children = (
-				1BC813412C01F10E00C7FA8B /* EditView.swift */,
-				1BC813442C020EB300C7FA8B /* EditViewModel.swift */,
-			);
-			path = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC813452C020EB300C7FA8B /* EditViewModel.swift in Sources */,
-				1B17395E2C01EEC10054E0AB /* ContentView.swift in Sources */,
+				1B17395E2C01EEC10054E0AB /* MainView.swift in Sources */,
+				1BB9554F2C024A6B00DA61FC /* DDay.swift in Sources */,
 				1B17395C2C01EEC10054E0AB /* DDayProjectApp.swift in Sources */,
 				1BC813422C01F10E00C7FA8B /* EditView.swift in Sources */,
 			);
