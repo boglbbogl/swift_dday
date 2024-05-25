@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isCreate : Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Button {
+                    isCreate.toggle()
+                }label: {
+                    Text("Create")
+                }.sheet(isPresented: self.$isCreate) {
+                    EditView()
+                }
+            }.navigationTitle("DDay")
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            ContentView()
+                .previewDisplayName("Light")
+                .colorScheme(.light)
+            ContentView()
+                .previewDisplayName("Dark")
+                .colorScheme(.dark)
+        }
+    }
 }
