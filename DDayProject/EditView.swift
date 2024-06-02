@@ -1,6 +1,7 @@
 
 import SwiftUI
 
+
 class EditViewModel : ObservableObject {
     @Published var date : Date = Date()
     @Published var title : String = ""
@@ -24,12 +25,6 @@ struct EditView: View {
     @Environment(\.presentationMode) private var presentationMode
     
     var onSuccess: ((DDay) -> Void)?
-    
-    private var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy. MM. dd"
-        return formatter
-    }
     
     var body: some View {
         VStack {
